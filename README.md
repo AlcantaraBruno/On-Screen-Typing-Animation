@@ -7,4 +7,4 @@
 
 ## Preview
 
-![Typing-Animation](https://user-images.githubusercontent.com/32379195/101697246-3c685100-3a56-11eb-9640-e689d63b9e15.gif)
+![Control](https://user-images.githubusercontent.com/32379195/101700449-ccf56000-3a5b-11eb-828a-3204fbc45551.gif)
