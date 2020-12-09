@@ -1,0 +1,53 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: 0;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: rgba(25,25,25);
+}
+
+.line {
+	border-right: 2px solid rgba(255,255,255, 0.75);
+	color: rgba(255,255,255,0.75);
+	font-family: "Special Elite", monospace;
+	font-size: 2em;
+	text-align: center;
+	margin: 0 auto;
+	/*Essa propriedade faz com que a linha não seja quebrada na animação*/
+	white-space: nowrap;
+	/*Essa propriedade faz, se eu nao tenho uma largura X ela vai escondendo o restante da msg */
+	overflow: hidden;
+}
+
+.typing-animation {
+	/*Steps() da a ilusão de uma maquina de escrever, ela quebra a animação em quadros
+	Both, permite que a animação fica igual no inicio ao fim */
+	animation: blinkCursor 1s infinite normal,
+	typing 4s  steps(40) 1s normal both;
+}
+
+@keyframes typing {
+	from{
+		/*A linha é quebrada aqui*/
+		width: 0;
+	}
+	to {
+		width: 16em;
+	}
+}
+
+@keyframes blinkCursor{
+	from {
+		border-right-color:rgba(255,255,255, 0.75);
+	}
+		to {
+		border-right-color: transparent;
+	}
+	}
+}
